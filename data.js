@@ -620,6 +620,24 @@ const stateInfo = {
 </p>
 `,
     "title": "Karnataka",
+        images: [
+      {
+        link: "./Karnataka/one.jpeg",
+        title: "somewhere in Karnataka",
+      },
+      {
+        link: "./Karnataka/two.jpeg",
+        title: "somewhere in Karnataka",
+      },
+      {
+        link: "./Karnataka/three.jpeg",
+        title: "somewhere in Karnataka",
+      },
+      {
+        link: "./Karnataka/four.jpeg",
+        title: "somewhere in Karnataka",
+      },
+    ],
 "thingsToDo": [
     {
       "name": "Hampi",
@@ -704,42 +722,121 @@ const stateInfo = {
   ]
   },
   "Kerala": {
-    "info": "Kerala, affectionately known as 'God's Own Country,' is a serene state on India's tropical Malabar Coast. It's famous for its palm-lined beaches, tranquil network of backwaters, verdant tea plantations in the Western Ghats, and a rich cultural heritage of classical dances and Ayurvedic treatments.",
+    "info": `<p>
+  <strong>Kerala</strong> — affectionately known as <em>“God’s Own Country”</em> 🌴 —  
+  will always hold a special place in our hearts. 💚  
+</p>
+
+<p>
+  It was the state we visited for <strong>Aishu’s wedding</strong> —  
+  our <em>first long-distance trip together</em>. ✈️  
+  I still remember watching you get ready in that beautiful <strong>saree</strong> —  
+  you looked absolutely stunning. 💫  
+</p>
+
+<p>
+  From the fun we had at the <strong>Kochi Marine Drive</strong>,  
+  to seeing all the <em>elephants</em> and other animals at the zoo 🐘🦜 —  
+  every moment was filled with laughter and joy.  
+  And who can forget our <em>scotty ride</em> through those scenic roads? 🛵  
+</p>
+
+<p>
+  The <strong>temperature was blazing hot</strong> 🔥,  
+  but traveling through the lush beauty of <strong>Kerala</strong> still felt magical. 🌿  
+</p>
+
+<p>
+  There’s still so much left to explore — the <em>backwaters of Alleppey</em>,  
+  the <em>tea gardens of Munnar</em>, and the <em>sunset at Varkala Beach</em>. 🌅  
+  <br />Let’s make sure our next trip there is even more unforgettable! 💞  
+</p>
+`,
     "title": "Kerala",
-    "thingsToDo": [
-      {
-        "name": "Alleppey (Alappuzha) Backwaters",
-        "description": "Experience the serene backwaters by hiring a traditional houseboat for a journey through the network of canals, lakes, and lagoons."
-      },
-      {
-        "name": "Munnar",
-        "description": "A breathtaking hill station in the Western Ghats, renowned for its sprawling tea estates, misty mountains, and exotic flora and fauna."
-      },
-      {
-        "name": "Kochi (Cochin)",
-        "description": "A vibrant port city with a rich history, known for the iconic Chinese Fishing Nets, the historic Fort Kochi area, Mattancherry Palace, and Jew Town."
-      },
-      {
-        "name": "Thekkady (Periyar National Park)",
-        "description": "One of India's finest wildlife reserves, where you can take a boat safari on Periyar Lake to spot elephants, sambar, tigers, and a variety of birds."
-      },
-      {
-        "name": "Varkala & Kovalam Beaches",
-        "description": "Relax on the stunning beaches of Varkala, with its unique cliffs adjacent to the Arabian Sea, or Kovalam, with its crescent-shaped coastline."
-      },
-      {
-        "name": "Wayanad",
-        "description": "A green paradise nestled in the Western Ghats, offering lush landscapes, spice plantations, ancient caves (Edakkal), and trekking opportunities."
-      },
-      {
-        "name": "Athirappilly Falls",
-        "description": "Often referred to as the 'Niagara of India,' this is the largest waterfall in Kerala, a majestic sight amidst lush green forests."
-      },
-      {
-        "name": "Watch a Kathakali Performance",
-        "description": "Witness a performance of this traditional and highly stylized classical Indian dance-drama, known for its elaborate costumes, makeup, and detailed gestures."
-      }
-    ]
+
+  "thingsToDo": [
+    {
+      "name": "Alleppey (Alappuzha) Backwaters",
+      "description": "Experience the serene backwaters by hiring a traditional houseboat for a journey through the network of canals, lakes, and lagoons.",
+      "images": [
+        {
+          "title": "Backwater in Alleppey",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/0/03/Backwater_in_alleppey.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Munnar",
+      "description": "A breathtaking hill station in the Western Ghats, renowned for its sprawling tea estates, misty mountains, and exotic flora and fauna.",
+      "images": [
+        {
+          "title": "Munnar hill station Kerala",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Munnar_hillstation_kerala.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Kochi (Cochin)",
+      "description": "A vibrant port city with a rich history, known for the iconic Chinese Fishing Nets, the historic Fort Kochi area, Mattancherry Palace, and Jew Town.",
+      "images": [
+        {
+          "title": "Kochi, Old Kochi, Kerala, India",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Kochi%2C_Old_Kochi%2C_Kerala%2C_India.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Thekkady (Periyar National Park)",
+      "description": "One of India's finest wildlife reserves, where you can take a boat safari on Periyar Lake to spot elephants, sambar, tigers, and a variety of birds.",
+      "images": [
+        {
+          "title": "Periyar National Park - Ramprasad T",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Periyar_National_Park_-_Ramprasad_T.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Varkala & Kovalam Beaches",
+      "description": "Relax on the stunning beaches of Varkala, with its unique cliffs adjacent to the Arabian Sea, or Kovalam, with its crescent-shaped coastline.",
+      "images": [
+        {
+          "title": "Varkala Beach, Kerala",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Varkala_Beach%2C_Kerala.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Wayanad",
+      "description": "A green paradise nestled in the Western Ghats, offering lush landscapes, spice plantations, ancient caves (Edakkal), and trekking opportunities.",
+      "images": [
+        {
+          "title": "Wayanad, India",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/3/39/Wayanad%2C_India.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Athirappilly Falls",
+      "description": "Often referred to as the 'Niagara of India,' this is the largest waterfall in Kerala, a majestic sight amidst lush green forests.",
+      "images": [
+        {
+          "title": "The View of the Athirapally Falls during the onset of Monsoon",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/8/81/The_View_of_the_Athirapally_Falls_during_the_onset_of_Monsoon.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Watch a Kathakali Performance",
+      "description": "Witness a performance of this traditional and highly stylized classical Indian dance-drama, known for its elaborate costumes, makeup, and detailed gestures.",
+      "images": [
+        {
+          "title": "Kathakali Performance Close-up",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Kathakali_Performance_Close-up.jpg"
+        }
+      ]
+    }
+  ],
+
   },
   "Madhya Pradesh": {
     "info": "Madhya Pradesh, the 'Heart of India,' is a state rich in history, wildlife, and cultural heritage. It is home to majestic forts, intricately carved temples like those in Khajuraho, ancient Buddhist stupas at Sanchi, and some of the country's best tiger reserves, offering a quintessential Indian experience.",
@@ -1797,42 +1894,117 @@ const stateInfo = {
     ]
   },
   "West Bengal": {
-    "info": "West Bengal, located in eastern India, is a state celebrated for its rich cultural and intellectual heritage. It is home to the vibrant city of Kolkata, the 'Cultural Capital of India,' the mangrove forests of the Sundarbans, the Himalayan charm of Darjeeling, and a legacy of art, literature, and revolutionary history.",
+    "info": `<p>
+  <strong>West Bengal</strong> — the state where our <em>love story truly began</em>. ❤️  
+</p>
+
+<p>
+  We never visited <strong>West Bengal</strong> together,  
+  but it’s the place that brought us <em>emotionally closer</em> even while we were miles apart. 🌍  
+  When you moved there, our conversations became endless —  
+  talking late into the night, sharing dreams, laughter, and everything in between. 🌙💬  
+</p>
+
+<p>
+  It was during those days that our <strong>bond grew deeper</strong>  
+  and our hearts found comfort in each other’s words. 💞  
+</p>
+
+<p>
+  Someday, I hope we can walk together through the vibrant streets of <strong>Kolkata</strong>,  
+  explore its art, music, and food — from <em>Howrah Bridge</em> to <em>Victoria Memorial</em>,  
+  from <em>College Street</em> to the sweet shops filled with <strong>Rasgullas</strong> and <strong>Misti Doi</strong>. 🍮🎶🏙️  
+</p>
+
+<p>
+  Let’s plan a trip soon to experience the <em>cultural capital of India</em> —  
+  and finally create our own memories in <strong>West Bengal</strong>. ✨  
+</p>
+`,
     "title": "West Bengal",
-    "thingsToDo": [
-      {
-        "name": "Kolkata",
-        "description": "The state capital, known for its colonial architecture like the Victoria Memorial, the Howrah Bridge, traditional tram network, and the vibrant Durga Puja festival."
-      },
-      {
-        "name": "Sundarbans National Park",
-        "description": "The world's largest mangrove forest and a UNESCO World Heritage site, home to the Royal Bengal tiger, saltwater crocodiles, and a unique ecosystem."
-      },
-      {
-        "name": "Darjeeling",
-        "description": "A famous hill station in the Lesser Himalayas, renowned for its sprawling tea plantations, the Darjeeling Himalayan Railway (Toy Train), and stunning views of Kangchenjunga."
-      },
-      {
-        "name": "Shantiniketan",
-        "description": "A university town founded by Rabindranath Tagore, it is a center for art, culture, and education, known for its unique atmosphere and festivals like Poush Mela."
-      },
-      {
-        "name": "Bishnupur",
-        "description": "Famous for its unique terracotta temples built by the Malla dynasty, Baluchari sarees, and a rich tradition of classical music."
-      },
-      {
-        "name": "Digha and Mandarmani",
-        "description": "Popular seaside resort towns on the shores of the Bay of Bengal, offering wide, flat beaches ideal for relaxing getaways."
-      },
-      {
-        "name": "Kalimpong",
-        "description": "A serene hill station known for its flower nurseries, Buddhist monasteries, colonial-era architecture, and panoramic valley views."
-      },
-      {
-        "name": "Gorumara National Park",
-        "description": "Located in the Dooars region, this park is famous for its large population of the Indian one-horned rhinoceros."
-      }
-    ]
+  "thingsToDo": [
+    {
+      "name": "Kolkata",
+      "description": "The state capital, known for its colonial architecture like the Victoria Memorial, the Howrah Bridge, traditional tram network, and the vibrant Durga Puja festival.",
+      "images": [
+        {
+          "title": "Victoria Memorial situated in Kolkata",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Victoria_Memorial_situated_in_Kolkata.jpg/640px-Victoria_Memorial_situated_in_Kolkata.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Sundarbans National Park",
+      "description": "The world's largest mangrove forest and a UNESCO World Heritage site, home to the Royal Bengal tiger, saltwater crocodiles, and a unique ecosystem.",
+      "images": [
+        {
+          "title": "Sundarbans National Park",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/0/05/Sundarbans_National_Park.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Darjeeling",
+      "description": "A famous hill station in the Lesser Himalayas, renowned for its sprawling tea plantations, the Darjeeling Himalayan Railway (Toy Train), and stunning views of Kangchenjunga.",
+      "images": [
+        {
+          "title": "Darjeeling - The City View",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Darjeeling_-_The_City_View.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Shantiniketan",
+      "description": "A university town founded by Rabindranath Tagore, it is a center for art, culture, and education, known for its unique atmosphere and festivals like Poush Mela.",
+      "images": [
+        {
+          "title": "Statue Of Rabindranath tagore in Santiniketan",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/8/87/Statue_Of_Rabindranath_tagore_in_Santiniketan.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Bishnupur",
+      "description": "Famous for its unique terracotta temples built by the Malla dynasty, Baluchari sarees, and a rich tradition of classical music.",
+      "images": [
+        {
+          "title": "Jor Bangla Temple",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Jor_Bangla_or_Keshta_Raya_temple_of_Bishnupur._Built_by_Raghunath_Singha_in_1655_AD._19.jpg/640px-Jor_Bangla_or_Keshta_Raya_temple_of_Bishnupur._Built_by_Raghunath_Singha_in_1655_AD._19.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Digha and Mandarmani",
+      "description": "Popular seaside resort towns on the shores of the Bay of Bengal, offering wide, flat beaches ideal for relaxing getaways.",
+      "images": [
+        {
+          "title": "Digha sea beach in Digha town",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Digha_sea_beach_in_Digha_town_11.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Kalimpong",
+      "description": "A serene hill station known for its flower nurseries, Buddhist monasteries, colonial-era architecture, and panoramic valley views.",
+      "images": [
+        {
+          "title": "View of Kalimpong, India",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/View_of_Kalimpong%2C_India.jpg/640px-View_of_Kalimpong%2C_India.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Gorumara National Park",
+      "description": "Located in the Dooars region, this park is famous for its large population of the Indian one-horned rhinoceros.",
+      "images": [
+        {
+          "title": "Gorumara National Park",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/2/24/GORUMARA_NATIONAL_PARK.jpg"
+        }
+      ]
+    }
+  ]
+
   },
   "Andaman and Nicobar Islands": {
     "info": "The Andaman and Nicobar Islands are a stunning archipelago in the Bay of Bengal, known for their palm-fringed, white-sand beaches, pristine coral reefs, and lush rainforests. This remote paradise offers some of the best scuba diving and snorkeling in India, along with a poignant history centered around the Cellular Jail.",
