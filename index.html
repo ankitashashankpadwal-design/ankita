@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>India Map — Responsive</title>
+  <link rel="stylesheet" href="./styles.css" />
+
+</head>
+<body>
+  <div class="card">
+    <h1>Exploring India</h1>
+    <div id="map-wrap">
+      <div id="map-container">Loading map…</div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="stateModal">
+    <div class="modal-content">
+        <div class="title-div">
+            <span class="close-btn" id="modalClose">&times;</span>
+            <h2 id="modal-title">State Name</h2>
+        </div>
+        <p id="modal-info">Information about the state will go here.</p>
+        <div id="modal-images-div"></div>
+        <div id="modal-things-to-do-div"></div>
+    </div>
+  </div>
+  <script src="./data.js"></script>
+  <script>
+    const SVG_PATH = './india.svg';
+    const container = document.getElementById('map-container');
+    const modal = document.getElementById('stateModal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalInfo = document.getElementById('modal-info');
+    const modalClose = document.getElementById('modalClose');
+    const modalImagesDiv = document.getElementById('modal-images-div');
+    const modalThingsToDoDiv = document.getElementById('modal-things-to-do-div');
+    const modalContent = modal.querySelector('.modal-content');
+    let lastSelected = null;
+
+    fetch(SVG_PATH).then(r=>{
+      if(!r.ok) throw new Error('Failed to load ' + SVG_PATH);
+      return r.text();
+    }).then(svgText=>{
+      container.innerHTML = svgText;
+      const svg = container.querySelector('svg');
+      svg.setAttribute("preserveAspectRatio","xMidYMid meet");
+      svg.setAttribute("viewBox", svg.getBBox().x+" "+svg.getBBox().y+" "+svg.getBBox().width+" "+svg.getBBox().height);
+
+      const candidates = svg.querySelectorAll('path, polygon, g[id]');
+      candidates.forEach(el=>{
+        el.addEventListener('click', ()=>{
+            const title = el.getAttribute('title');
+            if(lastSelected) lastSelected.classList.remove('selected');
+            el.classList.add('selected');
+            lastSelected = el;
+            modalTitle.textContent = stateInfo[title]?.title || title;
+            modalInfo.innerHTML = stateInfo[title]?.info || 'No additional information available.';
+            modalImagesDiv.innerHTML = '';
+            modalThingsToDoDiv.innerHTML = '';
+            if(stateInfo[title]?.images) {
+                stateInfo[title].images.forEach(img=>{
+                    let mediaEl;
+                    modalImagesDiv.appendChild(document.createElement("hr"));
+                    if(img.isVideo){
+                        mediaEl = document.createElement('video');
+                        mediaEl.setAttribute('controls', '');
+                        mediaEl.setAttribute('width', '100%');
+                        const sourceEl = document.createElement('source');
+                        sourceEl.setAttribute('src', img.link);
+                        sourceEl.setAttribute('type', 'video/mp4');
+                        mediaEl.appendChild(sourceEl);
+                    } else {
+                        mediaEl = document.createElement('img');
+                        mediaEl.setAttribute('src', img.link);
+                        mediaEl.setAttribute('alt', img.title || '');
+                        mediaEl.style.width = '100%';
+                        mediaEl.style.marginTop = '10px';
+                    }
+                    
+                    modalImagesDiv.appendChild(mediaEl);
+                    if(img.title) {
+                        const caption = document.createElement('div');
+                        caption.textContent = img.title;
+                        caption.classList.add('caption');
+                        modalImagesDiv.appendChild(caption);
+                    }
+                });
+            }
+
+            if(stateInfo[title]?.thingsToDo) {
+                // thingsToDo: [ { name: "name of the place to visit", description: "description of the place to visit", images: [ { link: "link to image or video", title: "title of image or video", isVideo: false // true if it's a video } ] } ]
+                const h3 = document.createElement('h3');
+                h3.textContent = 'Things to do:';
+                modalThingsToDoDiv.appendChild(document.createElement("hr"));
+                modalThingsToDoDiv.appendChild(h3);
+                stateInfo[title].thingsToDo.forEach(item=>{
+                    const itemDiv = document.createElement('div');
+                    const itemTitle = document.createElement('h4');
+                    itemTitle.textContent = item.name;
+                    itemDiv.appendChild(itemTitle);
+                    const itemDesc = document.createElement('p');
+                    itemDesc.textContent = item.description;
+                    itemDiv.appendChild(itemDesc);
+                    if(item.images) {
+                        item.images.forEach(img=>{
+                            const mediaEl = document.createElement('img');
+                            mediaEl.setAttribute('src', img.link);
+                            mediaEl.setAttribute('alt', img.title || '');
+                            mediaEl.style.width = '100%';
+                            mediaEl.style.marginTop = '10px';
+                            itemDiv.appendChild(mediaEl);
+                            if(img.title) {
+                                const caption = document.createElement('div');
+                                caption.textContent = img.title;
+                                caption.classList.add('caption');
+                                itemDiv.appendChild(caption);
+                            }
+                            itemDiv.appendChild(document.createElement('hr'));
+                        });
+                    }
+                    modalThingsToDoDiv.appendChild(itemDiv);
+                });
+            }
+            modal.style.display = 'flex';
+            modalContent.scrollTop = 0;
+        });
+      });
+    }).catch(err=>{
+      container.innerHTML = '<div style="padding:24px;color:#922">Failed to load map: '+err.message+'</div>';
+    });
+
+    modalClose.addEventListener('click', modalOnClose);
+    window.addEventListener('click', e=>{ if(e.target === modal){ modalOnClose(); } });
+    function modalOnClose() {
+        modal.style.display = 'none';
+        if(lastSelected) lastSelected.classList.remove('selected');
+        lastSelected = null;
+    }
+  </script>
+</body>
+</html>
