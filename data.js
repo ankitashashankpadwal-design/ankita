@@ -592,7 +592,33 @@ const stateInfo = {
     ]
   },
   "Karnataka": {
-    "info": "Karnataka, a state in southwest India, is a vibrant blend of ancient heritage and modern innovation. It is home to majestic palaces, ancient ruins of Hampi, lush coffee plantations of Coorg, the tech hub of Bengaluru, pristine beaches, and dense forests, offering a diverse and captivating travel experience.",
+    "info": `<p>
+  <strong>Karnataka</strong> holds a very special place in our love story. 💙  
+</p>
+
+<p>
+  When you moved from <strong>Pune</strong> to <strong>Karnataka</strong> for work,  
+  the <em>physical distance</em> between us increased —  
+  but at the same time, our <strong>bond grew stronger than ever</strong>. 💫  
+</p>
+
+<p>
+  I still remember visiting you in <strong>Bengaluru</strong> for <em>Valentine’s Day</em>  
+  and our <em>anniversary celebration</em>. 💐  
+  We even watched a movie together there — such simple yet beautiful memories. 🎬  
+</p>
+
+<p>
+  But there’s still so much of <strong>Karnataka</strong> left for us to explore!  
+  From the lush greenery of <em>Coorg</em> and <em>Chikmagalur</em> to the majestic ruins of <em>Hampi</em>  
+  and the serene beaches of <em>Gokarna</em> — every corner has its charm. 🌿🏰🌊  
+</p>
+
+<p>
+  Now that we’re in <strong>Goa</strong>, we’re even closer to <strong>North Karnataka</strong> —  
+  maybe it’s time to plan another memorable trip soon! 📍✨  
+</p>
+`,
     "title": "Karnataka",
 "thingsToDo": [
     {
