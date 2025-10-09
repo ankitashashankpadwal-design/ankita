@@ -64,6 +64,9 @@ svg g:hover {
 .selected {
   fill: #6ab0f3 !important;
 }
+.visited {
+  fill: #86b0f6 !important; 
+}
 
 /* Popup modal */
 .modal {

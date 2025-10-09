@@ -51,6 +51,8 @@
 
       const candidates = svg.querySelectorAll('path, polygon, g[id]');
       candidates.forEach(el=>{
+        const isVisited = stateInfo[el.getAttribute('title')]?.isVisited;
+        if(isVisited) el.classList.add('visited');
         el.addEventListener('click', ()=>{
             const title = el.getAttribute('title');
             if(lastSelected) lastSelected.classList.remove('selected');

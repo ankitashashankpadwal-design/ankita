@@ -116,40 +116,88 @@ const stateInfo = {
   "Bihar": {
     "info": "Bihar, a land of ancient history and profound spirituality, is where Buddhism and Jainism were born. It's home to the Mahabodhi Temple where the Buddha attained enlightenment, the ruins of the world's first university at Nalanda, and a rich cultural heritage that echoes the glory of the Mauryan and Gupta empires.",
     "title": "Bihar",
-    "thingsToDo": [
-      {
-        "name": "Bodh Gaya",
-        "description": "The most important Buddhist pilgrimage site in the world, featuring the Mahabodhi Temple and the Bodhi Tree under which Siddhartha Gautama attained enlightenment."
-      },
-      {
-        "name": "Nalanda University Ruins",
-        "description": "A UNESCO World Heritage site, these are the remains of one of the world's oldest and greatest universities, a center of learning from the 5th to the 12th century."
-      },
-      {
-        "name": "Rajgir",
-        "description": "An ancient city known for its spiritual significance in both Buddhism and Jainism, featuring sites like Vulture Peak, Vishwa Shanti Stupa, and hot springs."
-      },
-      {
-        "name": "Patna",
-        "description": "The state capital, with historical sites like Golghar, Patna Museum, and the sacred Sikh shrine of Takht Sri Patna Sahib, the birthplace of Guru Gobind Singh."
-      },
-      {
-        "name": "Vaishali",
-        "description": "An important archaeological site where Lord Buddha delivered his last sermon and where the second Buddhist council was held."
-      },
-      {
-        "name": "Pawapuri",
-        "description": "A holy site for Jains, where Lord Mahavira attained Nirvana. The main attraction is the beautiful marble Jal Mandir, situated in the middle of a lake."
-      },
-      {
-        "name": "Madhubani Art",
-        "description": "Explore the Mithila region, the heartland of the famous Madhubani painting style, characterized by its intricate geometric patterns and vibrant colors."
-      },
-      {
-        "name": "Valmiki National Park",
-        "description": "A Tiger Reserve located in the West Champaran district, representing the rich biodiversity of the Himalayan Terai landscape."
-      }
-    ]
+  "thingsToDo": [
+    {
+      "name": "Bodh Gaya",
+      "description": "The most important Buddhist pilgrimage site in the world, featuring the Mahabodhi Temple and the Bodhi Tree under which Siddhartha Gautama attained enlightenment.",
+      "images": [
+        {
+          "title": "Mahabodhi Temple Complex at Bodh Gaya - UNESCO World Heritage Centre",
+          "link": "https://whc.unesco.org/uploads/thumbs/site_1056_0001-400-400-20120601152647.webp"
+        }
+      ]
+    },
+    {
+      "name": "Nalanda University Ruins",
+      "description": "A UNESCO World Heritage site, these are the remains of one of the world's oldest and greatest universities, a center of learning from the 5th to the 12th century.",
+      "images": [
+        {
+          "title": "Nalanda mahavihara - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Temple_No.-_3%2C_Nalanda_Archaeological_Site.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Rajgir",
+      "description": "An ancient city known for its spiritual significance in both Buddhism and Jainism, featuring sites like Vulture Peak, Vishwa Shanti Stupa, and hot springs.",
+      "images": [
+        {
+          "title": "Vulture Peak - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Vulturepeak1.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Patna",
+      "description": "The state capital, with historical sites like Golghar, Patna Museum, and the sacred Sikh shrine of Takht Sri Patna Sahib, the birthplace of Guru Gobind Singh.",
+      "images": [
+        {
+          "title": "Golghar - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/9/91/Golghar_%E0%A5%AA.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Vaishali",
+      "description": "An important archaeological site where Lord Buddha delivered his last sermon and where the second Buddhist council was held.",
+      "images": [
+        {
+          "title": "Vaishali (ancient city) - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/3/3f/N-BR-69_Raja_Vishal_Garh_%285%29.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Pawapuri",
+      "description": "A holy site for Jains, where Lord Mahavira attained Nirvana. The main attraction is the beautiful marble Jal Mandir, situated in the middle of a lake.",
+      "images": [
+        {
+          "title": "Pawapuri Jal Mandir of Bhagwan Mahavir Near Nalanda - Inditales",
+          "link": "https://inditales.com/wp-content/uploads/2024/05/jal-mandir-pawapuri-bihar.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Madhubani Art",
+      "description": "Explore the Mithila region, the heartland of the famous Madhubani painting style, characterized by its intricate geometric patterns and vibrant colors.",
+      "images": [
+        {
+          "title": "Handmade Madhubani Fish Painting: Indian Folk Art (14\" X 14\") - Etsy",
+          "link": "https://i.etsystatic.com/19786224/r/il/56a0bb/3203347302/il_fullxfull.3203347302_muii.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Valmiki National Park",
+      "description": "A Tiger Reserve located in the West Champaran district, representing the rich biodiversity of the Himalayan Terai landscape.",
+      "images": [
+        {
+          "title": "Valmiki National Park, Bihar: Want to see untamed wilderness and tigers?  Visit Valmiki National Park in Bihar | TimesTravel",
+          "link": "https://static.toiimg.com/photo/116330421.cms"
+        }
+      ]
+    }
+  ]
   },
   "Chhattisgarh": {
     "info": "Chhattisgarh, a heavily forested state in central India, is known for its tribal culture, ancient temples, and spectacular natural wonders. It's a land of magnificent waterfalls, mysterious caves, and dense forests, offering an off-the-beaten-path experience rich in natural beauty and indigenous heritage.",
@@ -190,6 +238,7 @@ const stateInfo = {
     ]
   },
   "Goa": {
+    isVisited: true,
   "info": `<p>
   <strong>Goa</strong> — the state closest to our hearts after <strong>Maharashtra</strong>. ❤️
 </p>
@@ -452,106 +501,215 @@ const stateInfo = {
   "Haryana": {
     "info": "Haryana, a state in North India surrounding Delhi on three sides, is a land of ancient history and modern development. Known for its pivotal role in the epic Mahabharata, its rich agricultural prosperity, and the rapid urbanization of cities like Gurugram, it represents a blend of India's past and future.",
     "title": "Haryana",
-    "thingsToDo": [
-      {
-        "name": "Kurukshetra",
-        "description": "The mythical battlefield of the Mahabharata, this holy city is dotted with sacred sites like Brahma Sarovar, Jyotisar (where the Gita was delivered), and the Sri Krishna Museum."
-      },
-      {
-        "name": "Gurugram",
-        "description": "A bustling financial and technology hub, known for its towering skyscrapers, modern shopping malls like Cyber Hub, and the Kingdom of Dreams entertainment complex."
-      },
-      {
-        "name": "Sultanpur National Park",
-        "description": "A paradise for birdwatchers, especially in winter, this bird sanctuary is home to hundreds of resident and migratory bird species."
-      },
-      {
-        "name": "Pinjore Gardens (Yadavindra Gardens)",
-        "description": "A beautiful 17th-century Mughal garden, built in the traditional Charbagh pattern, with fountains, waterways, and pavilions."
-      },
-      {
-        "name": "Faridabad",
-        "description": "Known for the annual Surajkund International Crafts Mela, a vibrant fair that showcases the diversity of Indian handicrafts, art, and culture."
-      },
-      {
-        "name": "Morni Hills",
-        "description": "The only hill station in Haryana, offering scenic views, trekking opportunities, and the serene Tikkar Taal lake."
-      },
-      {
-        "name": "Rakhigarhi",
-        "description": "One of the largest and oldest sites of the Indus Valley Civilization, offering a deep insight into the subcontinent's ancient history."
-      },
-      {
-        "name": "Panipat",
-        "description": "A historic city known as the 'City of Weavers,' where three pivotal battles were fought. Visit the Panipat Museum and Kabuli Bagh Mosque."
-      }
-    ]
+  "thingsToDo": [
+    {
+      "name": "Kurukshetra",
+      "description": "The mythical battlefield of the Mahabharata, this holy city is dotted with sacred sites like Brahma Sarovar, Jyotisar (where the Gita was delivered), and the Sri Krishna Museum.",
+      "images": [
+        {
+          "title": "Kurukshetra - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Hitopadesha.jpg/250px-Hitopadesha.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Gurugram",
+      "description": "A bustling financial and technology hub, known for its towering skyscrapers, modern shopping malls like Cyber Hub, and the Kingdom of Dreams entertainment complex.",
+      "images": [
+        {
+          "title": "Cyber City Gurgaon - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Cyber_City_View.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Sultanpur National Park",
+      "description": "A paradise for birdwatchers, especially in winter, this bird sanctuary is home to hundreds of resident and migratory bird species.",
+      "images": [
+        {
+          "title": "Sultanpur Bird Sanctuary – Haryana Tourism",
+          "link": "https://haryanatourism.gov.in/wp-content/uploads/2024/07/bird_pic2.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Pinjore Gardens (Yadavindra Gardens)",
+      "description": "A beautiful 17th-century Mughal garden, built in the traditional Charbagh pattern, with fountains, waterways, and pavilions.",
+      "images": [
+        {
+          "title": "Yadavindra Gardens - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/4/41/Pinjore_Garden_Panchkula.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Faridabad",
+      "description": "Known for the annual Surajkund International Crafts Mela, a vibrant fair that showcases the diversity of Indian handicrafts, art, and culture.",
+      "images": [
+        {
+          "title": "Surajkund International Craft Mela – Haryana Tourism",
+          "link": "https://haryanatourism.gov.in/wp-content/uploads/2024/08/MG_1345-scaled.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Morni Hills",
+      "description": "The only hill station in Haryana, offering scenic views, trekking opportunities, and the serene Tikkar Taal lake.",
+      "images": [
+        {
+          "title": "Tikkar Lake (2025) - All You Need to Know BEFORE You Go (with Reviews)",
+          "link": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/00/e8/3f/tikkar-taal.jpg?w=1200&h=-1&s=1"
+        }
+      ]
+    },
+    {
+      "name": "Rakhigarhi",
+      "description": "One of the largest and oldest sites of the Indus Valley Civilization, offering a deep insight into the subcontinent's ancient history.",
+      "images": [
+        {
+          "title": "Is Rakhigarhi village home to older and larger Harappan-era site? -  Archaeology Wiki",
+          "link": "https://www.archaeology.wiki/wp-content/uploads/2013/06/Mohenjo-Daro.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Panipat",
+      "description": "A historic city known as the 'City of Weavers,' where three pivotal battles were fought. Visit the Panipat Museum and Kabuli Bagh Mosque.",
+      "images": [
+        {
+          "title": "Panipat Museum (2025) - All You Need to Know BEFORE You Go (with Reviews)",
+          "link": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/b9/4f/b6/caption.jpg?w=900&h=500&s=1"
+        }
+      ]
+    }
+  ]
+
   },
   "Himachal Pradesh": {
     info: "Himachal Pradesh, the 'Abode of Snow,' is a mesmerizing state in the Western Himalayas, celebrated for its towering snow-capped peaks, lush green valleys, rushing rivers, and serene spiritual retreats. From the colonial charm of Shimla to the adventurous allure of Manali and the tranquil Buddhist culture of Dharamshala, Himachal offers a sanctuary for nature lovers, adventure enthusiasts, and peace seekers. It's a land of breathtaking landscapes, vibrant local festivals, and warm hospitality.",
     title: "Himachal Pradesh",
-    thingsToDo: [
-      {
-        name: "Shimla",
-        description:
-          "The state capital, known for its colonial-era architecture, the bustling Mall Road and The Ridge, and the historic Jakhoo Temple perched atop a hill.",
-      },
-      {
-        name: "Manali",
-        description:
-          "A popular resort town nestled in the Kullu Valley, offering adventure sports, access to Solang Valley and Rohtang Pass, and the ancient Hadimba Devi Temple.",
-      },
-      {
-        name: "Dharamshala & McLeod Ganj",
-        description:
-          "The home of the Dalai Lama, this spiritual hub features the Tsuglagkhang Complex, Namgyal Monastery, and is a starting point for the famous Triund trek.",
-      },
-      {
-        name: "Spiti Valley",
-        description:
-          "A cold desert mountain valley known for its stark, lunar-like landscapes, ancient Buddhist monasteries like Key and Tabo, and high-altitude villages.",
-      },
-      {
-        name: "Rohtang Pass, near Manali",
-        description:
-          "A high-altitude mountain pass offering stunning views and snow activities. It serves as a gateway to the Lahaul and Spiti valleys.",
-      },
-      {
-        name: "Great Himalayan National Park, Kullu",
-        description:
-          "A UNESCO World Heritage site, home to diverse flora and fauna, including the elusive snow leopard. It's a paradise for trekkers and wildlife enthusiasts.",
-      },
-      {
-        name: "Kasol",
-        description:
-          "A serene village situated on the banks of the Parvati River, famous as a hub for backpackers and a base for treks like Kheerganga and Malana.",
-      },
-      {
-        name: "Khajjiar, near Dalhousie",
-        description:
-          "Often called the 'Mini Switzerland of India,' this picturesque meadow is surrounded by dense pine and deodar forests with a serene lake at its center.",
-      },
-      {
-        name: "Bir Billing",
-        description:
-          "Renowned as one of the best sites in the world for paragliding, offering breathtaking aerial views of the Dhauladhar mountain range.",
-      },
-      {
-        name: "Key Monastery, Spiti Valley",
-        description:
-          "A magnificent Tibetan Buddhist monastery, perched on a hilltop, it is one of the oldest and biggest monasteries in the Spiti Valley.",
-      },
-      {
-        name: "Chandratal Lake",
-        description:
-          "A stunning crescent-shaped high-altitude lake in the Spiti part of the Lahaul and Spiti district, known for its crystal-clear turquoise water.",
-      },
-      {
-        name: "Hadimba Devi Temple, Manali",
-        description:
-          "An ancient cave temple dedicated to Hidimbi Devi, wife of Bhima. It is uniquely constructed with a four-tiered pagoda-style roof amidst a cedar forest.",
-      },
-    ],
+  "thingsToDo": [
+    {
+      "name": "Shimla",
+      "description": "The state capital, known for its colonial-era architecture, the bustling Mall Road and The Ridge, and the historic Jakhoo Temple perched atop a hill.",
+      "images": [
+        {
+          "title": "Shimla | India, Map, Elevation, & History | Britannica",
+          "link": "https://cdn.britannica.com/37/142637-050-07226F7F/Shimla-Himachal-Pradesh-India.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Manali",
+      "description": "A popular resort town nestled in the Kullu Valley, offering adventure sports, access to Solang Valley and Rohtang Pass, and the ancient Hadimba Devi Temple.",
+      "images": [
+        {
+          "title": "Manali, Himachal Pradesh - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/0/03/Manali_City.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Dharamshala & McLeod Ganj",
+      "description": "The home of the Dalai Lama, this spiritual hub features the Tsuglagkhang Complex, Namgyal Monastery, and is a starting point for the famous Triund trek.",
+      "images": [
+        {
+          "title": "McLeod Ganj - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/4/44/McLeod_Ganj_Dharamkot_Dharmsala_Himachal_Pradesh_India_April_2014.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Spiti Valley",
+      "description": "A cold desert mountain valley known for its stark, lunar-like landscapes, ancient Buddhist monasteries like Key and Tabo, and high-altitude villages.",
+      "images": [
+        {
+          "title": "Spiti - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Spiti_River_Kaza_Himachal_Jun18_D72_7232.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Rohtang Pass, near Manali",
+      "description": "A high-altitude mountain pass offering stunning views and snow activities. It serves as a gateway to the Lahaul and Spiti valleys.",
+      "images": [
+        {
+          "title": "Rohtang Pass - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Kullu_Valley_from_Rohtang_Pass%2C_India.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Great Himalayan National Park, Kullu",
+      "description": "A UNESCO World Heritage site, home to diverse flora and fauna, including the elusive snow leopard. It's a paradise for trekkers and wildlife enthusiasts.",
+      "images": [
+        {
+          "title": "Great Himalayan National Park - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Himalayn_National_Park_01.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Kasol",
+      "description": "A serene village situated on the banks of the Parvati River, famous as a hub for backpackers and a base for treks like Kheerganga and Malana.",
+      "images": [
+        {
+          "title": "Kasol - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Kasol_mountain_view.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Khajjiar, near Dalhousie",
+      "description": "Often called the 'Mini Switzerland of India,' this picturesque meadow is surrounded by dense pine and deodar forests with a serene lake at its center.",
+      "images": [
+        {
+          "title": "Khajjiar Lake - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Khajjiar.jpg/1200px-Khajjiar.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Bir Billing",
+      "description": "Renowned as one of the best sites in the world for paragliding, offering breathtaking aerial views of the Dhauladhar mountain range.",
+      "images": [
+        {
+          "title": "Bir, Himachal Pradesh - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/a/a8/An_aerial_view_of_Bir%2C_Kangra_valley_sights_nature_culture_Himachal_Pradesh_India_2015.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Key Monastery, Spiti Valley",
+      "description": "A magnificent Tibetan Buddhist monastery, perched on a hilltop, it is one of the oldest and biggest monasteries in the Spiti Valley.",
+      "images": [
+        {
+          "title": "Key Monastery - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/4/49/1000_Year_loop.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Chandratal Lake",
+      "description": "A stunning crescent-shaped high-altitude lake in the Spiti part of the Lahaul and Spiti district, known for its crystal-clear turquoise water.",
+      "images": [
+        {
+          "title": "Chandratal Lake (2025) - All You Need to Know BEFORE You Go (with Reviews)",
+          "link": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/e5/bc/20/the-memserizing-beauty.jpg?w=1200&h=-1&s=1"
+        }
+      ]
+    },
+    {
+      "name": "Hadimba Devi Temple, Manali",
+      "description": "An ancient cave temple dedicated to Hidimbi Devi, wife of Bhima. It is uniquely constructed with a four-tiered pagoda-style roof amidst a cedar forest.",
+      "images": [
+        {
+          "title": "Hidimba Devi Temple - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Hidimba_Devi_Temple_-_North-east_View_-_Manali_2014-05-11_2648-2649.TIF/lossy-page1-1200px-Hidimba_Devi_Temple_-_North-east_View_-_Manali_2014-05-11_2648-2649.TIF.jpg"
+        }
+      ]
+    }
+  ]
   },
   "Jharkhand": {
     "info": "Jharkhand, the 'Land of Forests,' is a state in eastern India carved out of the southern part of Bihar. It is celebrated for its rich mineral wealth, vibrant tribal communities, and stunning natural beauty, including dense forests, rolling hills, and powerful waterfalls.",
@@ -592,6 +750,7 @@ const stateInfo = {
     ]
   },
   "Karnataka": {
+    isVisited: true,
     "info": `<p>
   <strong>Karnataka</strong> holds a very special place in our love story. 💙  
 </p>
@@ -722,6 +881,7 @@ const stateInfo = {
   ]
   },
   "Kerala": {
+    isVisited: true,
     "info": `<p>
   <strong>Kerala</strong> — affectionately known as <em>“God’s Own Country”</em> 🌴 —  
   will always hold a special place in our hearts. 💚  
@@ -752,6 +912,45 @@ const stateInfo = {
   <br />Let’s make sure our next trip there is even more unforgettable! 💞  
 </p>
 `,
+images: [
+      {
+        link: "./Kerala/hall.jpeg",
+        title: "In the wedding hall",
+      },
+      {
+        link: "./Kerala/we.jpeg",
+        title: "We ♥️",
+      },
+      {
+        link: "./Kerala/kochi.jpeg",
+        title: "I love Kochi",
+      },
+      {
+        link: "./Kerala/marines.jpeg",
+        title: "Marine Lines, Kochi",
+      },
+      {
+        link: "./Kerala/ride.jpeg",
+        title: "Scotty ride",
+      },
+      {
+        link: "./Kerala/ride2.jpeg",
+        title: "Scotty ride",
+      },
+      {
+        link: "./Kerala/elephant.mp4",
+        title: "Elephant at the zoo",
+        isVideo: true,
+      },
+      {
+        link: "./Kerala/deers.jpeg",
+        title: "Deers at the zoo",
+      },
+      {
+        link: "./Kerala/back.jpeg",
+        title: "Going back home 😕",
+      },
+    ],
     "title": "Kerala",
 
   "thingsToDo": [
@@ -841,42 +1040,91 @@ const stateInfo = {
   "Madhya Pradesh": {
     "info": "Madhya Pradesh, the 'Heart of India,' is a state rich in history, wildlife, and cultural heritage. It is home to majestic forts, intricately carved temples like those in Khajuraho, ancient Buddhist stupas at Sanchi, and some of the country's best tiger reserves, offering a quintessential Indian experience.",
     "title": "Madhya Pradesh",
-    "thingsToDo": [
-      {
-        "name": "Khajuraho Group of Monuments",
-        "description": "A UNESCO World Heritage site famous for its stunning temples adorned with intricate and erotic sculptures, showcasing Nagara-style architectural symbolism."
-      },
-      {
-        "name": "Bandhavgarh & Kanha National Parks",
-        "description": "Two of India's premier tiger reserves, offering a high probability of spotting the Bengal tiger, along with other wildlife like leopards, deer, and sloth bears."
-      },
-      {
-        "name": "Sanchi Stupa",
-        "description": "A magnificent Buddhist complex, commissioned by Emperor Ashoka. It is one of the oldest stone structures in India and a UNESCO World Heritage site."
-      },
-      {
-        "name": "Gwalior Fort",
-        "description": "A formidable hill fort that has been the stage for many historical events. It encompasses several palaces, temples, and water tanks."
-      },
-      {
-        "name": "Bhimbetka Rock Shelters",
-        "description": "A UNESCO World Heritage site featuring prehistoric cave paintings that provide a glimpse into human life from the Stone Age."
-      },
-      {
-        "name": "Ujjain",
-        "description": "An ancient city on the Shipra River, one of the seven sacred Hindu cities, famous for the Mahakaleshwar Jyotirlinga temple and the Kumbh Mela."
-      },
-      {
-        "name": "Orchha",
-        "description": "A historic town on the banks of the Betwa River, known for its grand palaces, temples, and royal chhatris (cenotaphs)."
-      },
-      {
-        "name": "Dhuandhar Falls, Bhedaghat",
-        "description": "A powerful waterfall on the Narmada River where the water cascades through the famous Marble Rocks, creating a smoky, misty effect."
-      }
-    ]
+  "thingsToDo": [
+    {
+      "name": "Khajuraho Group of Monuments",
+      "description": "A UNESCO World Heritage site famous for its stunning temples adorned with intricate and erotic sculptures, showcasing Nagara-style architectural symbolism.",
+      "images": [
+        {
+          "title": "Khajuraho Group of Monuments - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/1_Khajuraho.jpg/1200px-1_Khajuraho.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Bandhavgarh & Kanha National Parks",
+      "description": "Two of India's premier tiger reserves, offering a high probability of spotting the Bengal tiger, along with other wildlife like leopards, deer, and sloth bears.",
+      "images": [
+        {
+          "title": "Kanha Tiger Reserve - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Tiger_Kanha_National_Park.jpg/1200px-Tiger_Kanha_National_Park.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Sanchi Stupa",
+      "description": "A magnificent Buddhist complex, commissioned by Emperor Ashoka. It is one of the oldest stone structures in India and a UNESCO World Heritage site.",
+      "images": [
+        {
+          "title": "Great Stupa | History, Location, Description, Map, & Facts | Britannica",
+          "link": "https://cdn.britannica.com/36/155836-050-89E7AA9E/Great-Stupa-Sanchi-India.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Gwalior Fort",
+      "description": "A formidable hill fort that has been the stage for many historical events. It encompasses several palaces, temples, and water tanks.",
+      "images": [
+        {
+          "title": "Gwalior Fort - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Gwalior_Fort_front.jpg/1200px-Gwalior_Fort_front.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Bhimbetka Rock Shelters",
+      "description": "A UNESCO World Heritage site featuring prehistoric cave paintings that provide a glimpse into human life from the Stone Age.",
+      "images": [
+        {
+          "title": "Bhimbetka rock shelters - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Rock_Shelter_8%2C_Bhimbetka_02.jpg/640px-Rock_Shelter_8%2C_Bhimbetka_02.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Ujjain",
+      "description": "An ancient city on the Shipra River, one of the seven sacred Hindu cities, famous for the Mahakaleshwar Jyotirlinga temple and the Kumbh Mela.",
+      "images": [
+        {
+          "title": "Mahakaleshwar Jyotirlinga - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/7/75/Mahakaleshwar_Temple%2C_Ujjain.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Orchha",
+      "description": "A historic town on the banks of the Betwa River, known for its grand palaces, temples, and royal chhatris (cenotaphs).",
+      "images": [
+        {
+          "title": "ORCHHA PALACE AND CONVENTION CENTRE - Updated 2025 Prices & Hotel Reviews (India)",
+          "link": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/c3/0b/d1/orchha-palace.jpg?w=900&h=500&s=1"
+        }
+      ]
+    },
+    {
+      "name": "Dhuandhar Falls, Bhedaghat",
+      "description": "A powerful waterfall on the Narmada River where the water cascades through the famous Marble Rocks, creating a smoky, misty effect.",
+      "images": [
+        {
+          "title": "Dhuandhar Falls - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Dhuandhar_Waterfalls_in_Bhedaghat%2C_India.jpg"
+        }
+      ]
+    }
+  ]
   },
   Maharashtra: {
+    isVisited: true,
     info: `<p>
   <strong>महाराष्ट्र</strong> म्हणजे आपलं <em>home ground</em>. 
   आपण इथेच जन्मलो, राहिलो आणि सर्वात महत्त्वाचं म्हणजे <strong>पहिल्यांदा भेटलो</strong>. ❤️
@@ -1388,6 +1636,7 @@ const stateInfo = {
     ],
   },
   Rajasthan: {
+    isVisited: true,
     info: `<p>
   We already visited <strong>Jaipur</strong> and suffered in that <em>Sufar bus</em> 😅, 
   saw <strong>Hawa Mahal</strong> — and then saw <strong>Hawa Mahal again</strong> 😂
@@ -1820,80 +2069,177 @@ const stateInfo = {
   "Uttar Pradesh": {
     "info": "Uttar Pradesh, in the heartland of India, is a state of profound historical and religious significance. It is home to the iconic Taj Mahal, the sacred River Ganges in Varanasi, and the holy cities of Ayodhya and Mathura. It's a cradle of Indian culture, spirituality, and history that has shaped the nation for centuries.",
     "title": "Uttar Pradesh",
-    "thingsToDo": [
-      {
-        "name": "Agra",
-        "description": "Home to the Taj Mahal, one of the Seven Wonders of the World. Also visit the magnificent Agra Fort and Fatehpur Sikri, both UNESCO World Heritage sites."
-      },
-      {
-        "name": "Varanasi",
-        "description": "One of the world's oldest living cities and a major Hindu spiritual center. Experience the Ganga Aarti at the ghats, take a boat ride on the Ganges, and explore the ancient temples."
-      },
-      {
-        "name": "Lucknow",
-        "description": "The state capital, known as the 'City of Nawabs.' Famous for its elegant architecture like Bara Imambara, rich history, and delectable Awadhi cuisine."
-      },
-      {
-        "name": "Ayodhya",
-        "description": "The birthplace of Lord Rama, a major pilgrimage site for Hindus, with numerous temples and ghats along the Saryu River, including the newly built Ram Mandir."
-      },
-      {
-        "name": "Mathura & Vrindavan",
-        "description": "The birthplace and childhood home of Lord Krishna, these twin holy cities are filled with temples and are central to the ISKCON movement."
-      },
-      {
-        "name": "Sarnath",
-        "description": "Located near Varanasi, this is where Lord Buddha gave his first sermon. It is a major Buddhist pilgrimage site with stupas, monasteries, and the Ashoka Pillar."
-      },
-      {
-        "name": "Prayagraj (Allahabad)",
-        "description": "A holy city famous for the Triveni Sangam, the confluence of the Ganges, Yamuna, and mythical Saraswati rivers. It hosts the massive Kumbh Mela."
-      },
-      {
-        "name": "Dudhwa National Park",
-        "description": "A part of the Terai ecosystem, this park is known for its rich biodiversity, including tigers, swamp deer (barasingha), and a variety of birdlife."
-      }
-    ]
+  "thingsToDo": [
+    {
+      "name": "Agra",
+      "description": "Home to the Taj Mahal, one of the Seven Wonders of the World. Also visit the magnificent Agra Fort and Fatehpur Sikri, both UNESCO World Heritage sites.",
+      "images": [
+        {
+          "title": "Taj Mahal - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Taj_Mahal_%28Edited%29.jpeg"
+        }
+      ]
+    },
+    {
+      "name": "Varanasi",
+      "description": "One of the world's oldest living cities and a major Hindu spiritual center. Experience the Ganga Aarti at the ghats, take a boat ride on the Ganges, and explore the ancient temples.",
+      "images": [
+        {
+          "title": "2025 Varanasi Evening Ganga Aarti Tour - with Trusted Reviews",
+          "link": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/6f/12/a3.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Lucknow",
+      "description": "The state capital, known as the 'City of Nawabs.' Famous for its elegant architecture like Bara Imambara, rich history, and delectable Awadhi cuisine.",
+      "images": [
+        {
+          "title": "What makes Bara Imambara a must-visit attraction in Lucknow?, Lucknow -  TimesTravel",
+          "link": "https://static.toiimg.com/photo/103890972.cms"
+        }
+      ]
+    },
+    {
+      "name": "Ayodhya",
+      "description": "The birthplace of Lord Rama, a major pilgrimage site for Hindus, with numerous temples and ghats along the Saryu River, including the newly built Ram Mandir.",
+      "images": [
+        {
+          "title": "Ram Mandir - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Ayodhya_Ram_Mandir_Inauguration_Day_Picture.jpg/1200px-Ayodhya_Ram_Mandir_Inauguration_Day_Picture.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Mathura & Vrindavan",
+      "description": "The birthplace and childhood home of Lord Krishna, these twin holy cities are filled with temples and are central to the ISKCON movement.",
+      "images": [
+        {
+          "title": "Krishna Janmasthan Temple Complex - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Mathura_Temple-Mathura-India0002.JPG"
+        }
+      ]
+    },
+    {
+      "name": "Sarnath",
+      "description": "Located near Varanasi, this is where Lord Buddha gave his first sermon. It is a major Buddhist pilgrimage site with stupas, monasteries, and the Ashoka Pillar.",
+      "images": [
+        {
+          "title": "Dhamek Stupa - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/0/02/Dhamek_Stupa%2C_Sarnath.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Prayagraj (Allahabad)",
+      "description": "A holy city famous for the Triveni Sangam, the confluence of the Ganges, Yamuna, and mythical Saraswati rivers. It hosts the massive Kumbh Mela.",
+      "images": [
+        {
+          "title": "Triveni Sangam Prayagraj (2025) - All You Need to Know BEFORE You Go (with  Reviews)",
+          "link": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/e2/5c/8f/caption.jpg?w=1200&h=-1&s=1"
+        }
+      ]
+    },
+    {
+      "name": "Dudhwa National Park",
+      "description": "A part of the Terai ecosystem, this park is known for its rich biodiversity, including tigers, swamp deer (barasingha), and a variety of birdlife.",
+      "images": [
+        {
+          "title": "Dudhwa National Park Uttar Pradesh India",
+          "link": "https://www.dudhwanationalpark.in/image/s2.jpg"
+        }
+      ]
+    }
+  ]
   },
   "Uttarakhand": {
     "info": "Uttarakhand, the 'Devbhumi' or 'Land of the Gods,' is a Himalayan state in northern India. It is renowned for its sacred Hindu pilgrimage sites, world-famous yoga and meditation retreats in Rishikesh, stunning hill stations, and abundant natural beauty, including pristine rivers, dense forests, and snow-capped peaks.",
     "title": "Uttarakhand",
-    "thingsToDo": [
-      {
-        "name": "Rishikesh",
-        "description": "The 'Yoga Capital of the World,' a spiritual hub on the banks of the Ganges, famous for its ashrams, yoga centers, and adventure sports like white-water rafting."
-      },
-      {
-        "name": "Nainital",
-        "description": "A charming hill station built around the emerald Naini Lake, offering boating, trekking, and panoramic views from spots like Snow View Point."
-      },
-      {
-        "name": "Mussoorie",
-        "description": "Known as the 'Queen of the Hills,' this popular hill station offers picturesque views of the Himalayas, cascading waterfalls like Kempty Falls, and a bustling Mall Road."
-      },
-      {
-        "name": "Jim Corbett National Park",
-        "description": "India's oldest national park and a key tiger reserve, offering jeep safaris to spot wildlife including tigers, elephants, and hundreds of bird species."
-      },
-      {
-        "name": "Char Dham Yatra (Badrinath, Kedarnath, Gangotri, Yamunotri)",
-        "description": "A major Hindu pilgrimage circuit covering four holy shrines nestled high in the Himalayas."
-      },
-      {
-        "name": "Auli",
-        "description": "A premier skiing destination in India, offering stunning panoramic views of the Himalayas, pristine slopes, and a long cable car ride."
-      },
-      {
-        "name": "Valley of Flowers National Park",
-        "description": "A UNESCO World Heritage site, this breathtaking high-altitude valley is carpeted with hundreds of species of alpine flowers during the monsoon season."
-      },
-      {
-        "name": "Haridwar",
-        "description": "A holy city where the River Ganges enters the plains. It's famous for the Ganga Aarti at Har Ki Pauri and the Kumbh Mela."
-      }
-    ]
+  "thingsToDo": [
+    {
+      "name": "Rishikesh",
+      "description": "The 'Yoga Capital of the World,' a spiritual hub on the banks of the Ganges, famous for its ashrams, yoga centers, and adventure sports like white-water rafting.",
+      "images": [
+        {
+          "title": "THE 15 BEST Things to Do in Rishikesh (2025) - Must-See Attractions",
+          "link": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/8d/93/a1/beautiful-view-from-the.jpg?w=500&h=-1&s=1"
+        }
+      ]
+    },
+    {
+      "name": "Nainital",
+      "description": "A charming hill station built around the emerald Naini Lake, offering boating, trekking, and panoramic views from spots like Snow View Point.",
+      "images": [
+        {
+          "title": "Exploring Nainital: 5 must-do things in the scenic hill station |  TimesTravel",
+          "link": "https://static.toiimg.com/photo/112926260.cms"
+        }
+      ]
+    },
+    {
+      "name": "Mussoorie",
+      "description": "Known as the 'Queen of the Hills,' this popular hill station offers picturesque views of the Himalayas, cascading waterfalls like Kempty Falls, and a bustling Mall Road.",
+      "images": [
+        {
+          "title": "Mussoorie, Queen of the Hills in India, Uttarakhand",
+          "link": "https://himalayashelter.s3.ap-south-1.amazonaws.com/mussoorie_queen_of_..._imresizer.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Jim Corbett National Park",
+      "description": "India's oldest national park and a key tiger reserve, offering jeep safaris to spot wildlife including tigers, elephants, and hundreds of bird species.",
+      "images": [
+        {
+          "title": "Jim Corbett National Park - Wikipedia",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/7/78/Bengal-Tiger_Corbett_Uttarakhand_Dec-2013.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Char Dham Yatra (Badrinath, Kedarnath, Gangotri, Yamunotri)",
+      "description": "A major Hindu pilgrimage circuit covering four holy shrines nestled high in the Himalayas.",
+      "images": [
+        {
+          "title": "Char Dham: The Holy Himalayan Pilgrimage to Four Temples is Both Grueling  and Grace-Giving - Hinduism Today",
+          "link": "https://hinduismtoday.b-cdn.net/wp-content/uploads/2020/04/f0018-01-e1586124033427.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Auli",
+      "description": "A premier skiing destination in India, offering stunning panoramic views of the Himalayas, pristine slopes, and a long cable car ride.",
+      "images": [
+        {
+          "title": "Auli Snow Skiing, Winter Skiing Tours in India, Skiing in Auli, Ski Packages  2026, Auli Skiing Course, Skiing at Auli, Snow Skiing Auli",
+          "link": "https://www.auliskiing.in/pics/snow-skiing-in-india.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Valley of Flowers National Park",
+      "description": "A UNESCO World Heritage site, this breathtaking high-altitude valley is carpeted with hundreds of species of alpine flowers during the monsoon season.",
+      "images": [
+        {
+          "title": "Valley of Flowers National Park (2025) - All You Need to Know BEFORE You Go  (with Reviews)",
+          "link": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/ad/eb/cb/this-image-is-valley.jpg?w=1200&h=-1&s=1"
+        }
+      ]
+    },
+    {
+      "name": "Haridwar",
+      "description": "A holy city where the River Ganges enters the plains. It's famous for the Ganga Aarti at Har Ki Pauri and the Kumbh Mela.",
+      "images": [
+        {
+          "title": "Haridwar | India, Temple, Map, & Facts | Britannica",
+          "link": "https://cdn.britannica.com/76/142576-050-B8289A00/Pilgrims-Haridwar-Ganges-River-India-Uttarakhand.jpg"
+        }
+      ]
+    }
+  ]
   },
   "West Bengal": {
+    isVisited: true,
     "info": `<p>
   <strong>West Bengal</strong> — the state where our <em>love story truly began</em>. ❤️  
 </p>
@@ -2009,40 +2355,90 @@ const stateInfo = {
   "Andaman and Nicobar Islands": {
     "info": "The Andaman and Nicobar Islands are a stunning archipelago in the Bay of Bengal, known for their palm-fringed, white-sand beaches, pristine coral reefs, and lush rainforests. This remote paradise offers some of the best scuba diving and snorkeling in India, along with a poignant history centered around the Cellular Jail.",
     "title": "Andaman and Nicobar Islands",
-    "thingsToDo": [
-      {
-        "name": "Havelock Island (Swaraj Dweep)",
-        "description": "Famous for the stunning Radhanagar Beach (often ranked among the best in Asia), Elephant Beach for snorkeling, and Kalapathar Beach."
-      },
-      {
-        "name": "Cellular Jail, Port Blair",
-        "description": "A colonial prison, now a national memorial, that tells the poignant story of India's freedom struggle. The light and sound show is a must-see."
-      },
-      {
-        "name": "Neil Island (Shaheed Dweep)",
-        "description": "A quieter island known for its beautiful beaches like Bharatpur, Laxmanpur, and Sitapur, and the natural rock formation known as Howrah Bridge."
-      },
-      {
-        "name": "Ross Island (Netaji Subhas Chandra Bose Dweep)",
-        "description": "The former administrative headquarters for the British, now in ruins, with old buildings overgrown by roots, and home to a large population of deer and peacocks."
-      },
-      {
-        "name": "Scuba Diving and Snorkeling",
-        "description": "Explore the vibrant underwater world and rich coral reefs at various spots across Havelock, Neil Island, and North Bay Island."
-      },
-      {
-        "name": "Baratang Island",
-        "description": "Known for its unique limestone caves and dense mangrove creeks. It's an adventurous day trip from Port Blair."
-      },
-      {
-        "name": "Chidiya Tapu",
-        "description": "Known as the 'Bird Island,' it's a paradise for birdwatchers and famous for its breathtaking sunsets."
-      },
-      {
-        "name": "Jolly Buoy Island",
-        "description": "Part of the Mahatma Gandhi Marine National Park, it offers some of the best coral views and is accessible via glass-bottom boats."
-      }
-    ]
+
+  "thingsToDo": [
+    {
+      "name": "Havelock Island (Swaraj Dweep)",
+      "description": "Famous for the stunning Radhanagar Beach (often ranked among the best in Asia), Elephant Beach for snorkeling, and Kalapathar Beach.",
+      "images": [
+        {
+          "title": "Radhanagar Beach- Havelock (Full Guide, Photos, 2021)",
+          "link": "https://cdn.prod.website-files.com/5b56319971ac8c7475a9d877/5ee481817da4561eb9621b3e_Radhanagar-.JPG"
+        }
+      ]
+    },
+    {
+      "name": "Cellular Jail, Port Blair",
+      "description": "A colonial prison, now a national memorial, that tells the poignant story of India's freedom struggle. The light and sound show is a must-see.",
+      "images": [
+        {
+          "title": "File:Front View of Cellular Jail, Port Blair.JPG - Wikimedia Commons",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Front_View_of_Cellular_Jail%2C_Port_Blair.JPG/960px-Front_View_of_Cellular_Jail%2C_Port_Blair.JPG"
+        }
+      ]
+    },
+    {
+      "name": "Neil Island (Shaheed Dweep)",
+      "description": "A quieter island known for its beautiful beaches like Bharatpur, Laxmanpur, and Sitapur, and the natural rock formation known as Howrah Bridge.",
+      "images": [
+        {
+          "title": "Bharatpur beach in Neil Island",
+          "link": "http://be.discoverandaman.in/storage/uploads/2024/2/8e7965b3-74e6-478a-bcda-088346037edd.jpeg"
+        }
+      ]
+    },
+    {
+      "name": "Ross Island (Netaji Subhas Chandra Bose Dweep)",
+      "description": "The former administrative headquarters for the British, now in ruins, with old buildings overgrown by roots, and home to a large population of deer and peacocks.",
+      "images": [
+        {
+          "title": "Ross Island, Also Known As Netaji Subhash Chandra Bose Dweep is a Popular Tourist Attraction in the Andamans",
+          "link": "https://thumbs.dreamstime.com/b/ross-island-was-named-marine-surveyor-daniel-ross-famous-ruins-ancient-british-era-ross-island-also-known-369318317.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Scuba Diving and Snorkeling",
+      "description": "Explore the vibrant underwater world and rich coral reefs at various spots across Havelock, Neil Island, and North Bay Island.",
+      "images": [
+        {
+          "title": "Coral Reef Andaman Sea",
+          "link": "https://www.shutterstock.com/image-photo/male-scuba-diver-diving-through-600nw-2540465459.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Baratang Island",
+      "description": "Known for its unique limestone caves and dense mangrove creeks. It's an adventurous day trip from Port Blair.",
+      "images": [
+        {
+          "title": "File:Lime Stone Caves, Baratang Island, UT of Andaman &Nicobar Islands, India.JPG - Wikimedia Commons",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Lime_Stone_Caves%2C_Baratang_Island%2C_UT_of_Andaman_%26Nicobar_Islands%2C_India.JPG"
+        }
+      ]
+    },
+    {
+      "name": "Chidiya Tapu",
+      "description": "Known as the 'Bird Island,' it's a paradise for birdwatchers and famous for its breathtaking sunsets.",
+      "images": [
+        {
+          "title": "Chidiya Tapu: Andaman S Best Sunset Beach",
+          "link": "https://thumbs.dreamstime.com/b/chidiya-tapu-andaman-s-best-sunset-beach-also-known-as-point-bird-island-one-places-to-see-port-blair-56559081.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Jolly Buoy Island",
+      "description": "Part of the Mahatma Gandhi Marine National Park, it offers some of the best coral views and is accessible via glass-bottom boats.",
+      "images": [
+        {
+          "title": "File:Jolly Bouy Island, Mahatma Gandhi Marine National Park.jpg - Wikimedia Commons",
+          "link": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Jolly_Bouy_Island%2C_Mahatma_Gandhi_Marine_National_Park.jpg"
+        }
+      ]
+    }
+  ]
+
   },
   "Chandigarh": {
     "info": "Chandigarh, a union territory and the joint capital of Punjab and Haryana, is one of India's first planned cities, designed by the famous architect Le Corbusier. It is renowned for its modern architecture, urban planning, green spaces, and a high quality of life, earning it the nickname 'The City Beautiful.'",
